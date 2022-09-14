@@ -203,10 +203,7 @@ nav {
 }
 
 .works{
-    display: flex;
-    flex-direction: column;
     gap: 5em;
-    align-items: center;
     justify-content: center;
 }
 
@@ -227,6 +224,30 @@ nav {
     line-height: 1.6em;
 }
 
+.projects-text{
+    margin: 1em;
+    width: 80%;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: var(--secondary-font);
+}
+
+.swiper {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-slide img {
+    max-width: 100%;
+  }
 
 @media screen and (min-width:640px) {
     nav{
