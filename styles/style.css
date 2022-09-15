@@ -380,4 +380,19 @@ nav {
     .works-row:nth-child(even) {
         flex-direction: row-reverse;
     }
+
+    .swiper{
+        width: 80%;
+        min-height: auto;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 2rem !important;
+    }
+    .card{
+        max-width: 30%;
+    }
+    .card img{
+        max-height: 24rem;
+    }
 }
