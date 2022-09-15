@@ -303,6 +303,19 @@ nav {
     line-height: 1.5em;
 }
 
+.proposal{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proposal-text{
+    color: var(--primary-col);
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: var(--secondary-font);
+    text-align: center;
+}
 @media screen and (min-width:640px) {
     nav {
         padding-block: 0;
@@ -394,5 +407,8 @@ nav {
     }
     .card img{
         max-height: 24rem;
+    }
+    .proposal-text{
+        font-size: 5rem;
     }
 }
