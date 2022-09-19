@@ -45,3 +45,12 @@
     filter: blur(0);
     transform: translateY(0);
 }
+
+.hidden{
+    opacity: 0;
+    transition: 600ms;
+}
+
+.fade{
+    opacity: 1;
+}

@@ -18,4 +18,21 @@ function work_row_observer() {
     works.forEach(entry => divObserver.observe(entry))
 }
 
+function header_obser(){
+    const FADE_CLASS = "fade"
+    const headerObserver = new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+            entry.isIntersecting ? entry.target.classList.add(FADE_CLASS) :  entry.target.classList.remove(FADE_CLASS)
+        })
+    },{
+        threshold:1
+    })
+    const headers = document.querySelectorAll(".hidden")
+    headers.forEach(entry=>{
+        headerObserver.observe(entry)
+    })
+}
+
 work_row_observer()
+
+header_obser()
