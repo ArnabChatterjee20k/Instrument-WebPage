@@ -5,7 +5,7 @@ let imgObserver = new IntersectionObserver((entries,observer)=>{
     // entries is an array
     entries.forEach(entry=>{
         if(entry.isIntersecting){
-            console.log(entry.target)
+            // console.log(entry.target)
             entry.target.classList.remove(Lazy_LOADER_CLASS)
             entry.target.classList.remove(LOADER_SPINNER)
             entry.target.src = entry.target.getAttribute("data-src")

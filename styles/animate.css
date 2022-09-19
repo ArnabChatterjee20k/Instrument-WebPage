@@ -1,0 +1,47 @@
+
+.works-row-hidden> *:not(img){
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(20px);
+    transition: 200ms;
+}
+
+.works-row-show>*:not(img){
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.works-row-hidden>img{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(20px);
+    transition: 200ms;
+    transition-delay: 100ms;
+}
+
+.works-row-show>img{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+/* since we have used row reverse so we are using this */
+.works-row-hidden:nth-child(even)>*:not(img){
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100px);
+    transition: 200ms;
+}
+
+.works-row-show:nth-child(even)>*:not(img){
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.works-row-show:nth-child(even)>img{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
