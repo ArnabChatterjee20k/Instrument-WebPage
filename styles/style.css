@@ -272,6 +272,36 @@ nav {
     color: var(--seconday-col);
 }
 
+.lazy-load{
+    position: static !important;
+    z-index: 0 !important;
+    animation: spin 0.5s infinite linear,
+                color-change 5s infinite linear !important;
+}
+
+@keyframes spin {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes color-change {
+    0%{
+        border-color: var(--primary-col);
+        border-top-color: transparent;
+    }
+    50%{
+        border-color: var(--seconday-col);
+        border-top-color: transparent;
+    }
+    100%{
+        border-color: var(--tertiary-col);
+        border-top-color: transparent;
+    }
+}
 .card {
     max-width: 75%;
     display: flex;
