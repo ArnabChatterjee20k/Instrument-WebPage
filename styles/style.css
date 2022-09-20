@@ -69,6 +69,7 @@ nav {
     min-height: 100vh;
     background-color: var(--primary-bg);
     width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     transform: translateX(-100%);
     transition: 200ms;
 }
@@ -364,6 +365,7 @@ nav {
 
     .side-nav {
         transform: translateX(0);
+        box-shadow: none;
         flex-direction: row;
         position: static;
         min-height: auto;

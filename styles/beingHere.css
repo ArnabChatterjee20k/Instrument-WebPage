@@ -1,0 +1,54 @@
+:root {
+  --primary-bg: #19214d;
+  --primary-col: #deeff5;
+  --secondary-col: #303865;
+  --primary-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --secondary-font: sans-serif;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-heading {
+  max-width: 80%;
+  margin: auto;
+}
+
+.headline {
+  text-align: left;
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+
+.sub-headline {
+  text-align: left;
+  font-weight: lighter;
+  line-height: 1.5em;
+}
+
+.works-row-hidden>*:nth-child(even){
+    transition-delay: 100ms !important;
+}
+
+.hero-last .hero-text{
+    justify-self: flex-start;
+}
+
+@media screen and (min-width: 640px) {
+  .hero-text-heading {
+    font-size: 10rem;
+  }
+  .hero-heading{
+    max-width: 50%;
+    padding: 1em;
+  }
+
+  .hero-last .hero-tag-lines{
+    font-size: 2.6rem ;
+}
+}
