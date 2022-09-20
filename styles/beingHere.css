@@ -6,6 +6,21 @@
     --secondary-font: sans-serif;
 }
 
+[data-theme="dark"] {
+  --primary-col: #19214d;
+  --primary-bg: #deeff5;
+  --invert:1;
+}
+
+html *:not(nav.side-nav){
+  transition: 500ms;
+}
+
+#logo,#menu{
+  filter: invert(var(--invert,0)); 
+  /* if invert not found then fallback will be 0 */
+}
+
 .hero{
     display: flex;
     flex-direction: column;
