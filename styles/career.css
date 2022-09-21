@@ -1,0 +1,60 @@
+:root {
+  --primary-col: #19214d;
+  --primary-bg: #deeff5;
+  --secondary-col: #303865;
+  --primary-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --secondary-font: sans-serif;
+  --invert:1
+}
+
+#logo,#menu{
+    filter: invert(var(--invert,0)); 
+    /* if invert not found then fallback will be 0 */
+}
+
+.moto-text{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.moto{
+    min-height: 60vh;
+    justify-content: center;
+}
+
+.moto::before,
+.moto::after {
+    display: none;
+}
+
+.roles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1em;
+    padding-block: 2em;
+    gap: 1em;
+    font-family: var(--secondary-font);
+}
+
+.roles-row{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 2px solid #b7c6d3;
+    padding-block: 15px;
+}
+
+.roles-row-heading{
+    font-size: 2rem;
+    color: var(--primary-col);
+}
+
+.roles-row-desp{
+    font-size: 1.3rem;
+    color: var(--primary-col);
+    font-weight: 400;
+    line-height: 1.35em;
+}
